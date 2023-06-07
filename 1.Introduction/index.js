@@ -1,3 +1,10 @@
+for (let i = 0; i < paragraphs.length; i++) {
+    const paragraph = paragraphs[i];
+    if(!paragraph.classList.lenght){
+        let generate = genColor();
+        paragraph.style.color =generate;
+    }
+}
 
 // Display the document title in the console
 console.log(document.title);
@@ -20,8 +27,3 @@ let bodyElements = document.getElementById("demo").innerHTML= storeChildren;
 console.log(bodyElements)
     
 
-
-// questions
-// 1. why do i have get id,class etc before working on it while title, body etc dont require getElement
-// how can i log color
-// what is collection and why cant i pass "document.body.children" to a varible
