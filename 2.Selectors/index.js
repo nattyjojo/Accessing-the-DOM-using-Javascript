@@ -7,7 +7,7 @@ function getTag(a){
 // Add a title attribute to every element that has the important class
 getTag(".important")
 for(let items of getAtrribut){
-    items.setAttribute("title", "important");
+    items.setAttribute("title", "This is an important item");
 }
 
 
@@ -21,7 +21,8 @@ for(let imgs of getAtrribut){
 // Loop through all the paragraphs and display their content in the console. If the paragraph has a class, display its classname as well
 getTag("p")
 for(let content of getAtrribut){
-    console.log(content.innerHTML + " class=" + content.classList);
+    
+    console.log(content.innerHTML + " " + content.classList);
 }
 // Give each of the paragraph a random text color (different for each one) UNLESS it has a class then leave it as it is.
 const paragraphs = getAtrribut;
