@@ -17,4 +17,4 @@ secondSection.insertBefore(thirdSectionHead, secondSectionParagraph);
 thirdSection.insertBefore(secondSectionHead, thirdSectionParagraph);
 
 // Delete the last section from the DOM, we don't need it anyways
-let deletSection = sections[sections.length -1].remove();
+let deleteSection = sections[sections.length -1].remove();

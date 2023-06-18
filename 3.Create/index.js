@@ -1,8 +1,6 @@
 // Modify the script.js to create a new <section> with a random background-color for each learner in your group.
 // This section should contain a paragraph with the name of the learner. Those sections should be appended in the <article>
 
-// Find a way so that everytime you load the page the order of the elements changes!
-
 const groupList = [
   "LeslieL",
   "Ignace",
@@ -47,7 +45,6 @@ const create = () => {
     const paragraph = document.createElement("p");
     section.appendChild(paragraph);
     const getArticle = document.querySelector("article");
-
     getArticle.appendChild(section);
     let Paragraphs = document.querySelectorAll("p");
     let add = (Paragraphs[x].innerText = groupList[x]);
@@ -65,13 +62,16 @@ const create = () => {
 }
 
 create();
-let getSections = document.querySelectorAll("section");
-const randomSection = () =>{
-  let select = Math.floor(Math.random()*groupList.length);
 
+// Find a way so that everytime you load the page the order of the elements changes!
+const articleElement = document.querySelector("article");
+let sections = document.querySelectorAll("section");
+let changes = () =>{
+  for(let each of sections){
+    generateRandomNubers = Math.floor(Math.random()*sections.length)
+    articleElement.appendChild(sections[generateRandomNubers])
+
+  }
 }
-randomSection();
-/*
-    If the background is dark the text should be white, if the background is light the text should be black
-    Find a way so that everytime you load the page the order of the elements changes!
-*/
+changes()
+

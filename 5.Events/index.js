@@ -29,7 +29,7 @@ const clickOnSquare = (e) => {
 const actionSquares = document.querySelectorAll(".actionsquare");
 for (let actionSquare of actionSquares) {
   actionSquare.addEventListener("click", clickOnSquare);
-  //i started here
+  
 }
 // Add an event listener on the document <body>, listening for the keypress event. (hint: have a look at this)
 document.body.addEventListener("keypress", function (event) {
